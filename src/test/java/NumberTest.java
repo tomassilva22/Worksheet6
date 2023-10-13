@@ -1,10 +1,7 @@
-package org.example;
-
 import org.example.Number;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.assertNotSame;
 import static org.junit.jupiter.api.Assertions.assertSame;
 
 public class NumberTest {
@@ -18,9 +15,8 @@ public class NumberTest {
 
     @Test
     public void testAverage() {
-        double actualAverage = number.average(252);
-        double testAverage = 3.0;
-        assertSame(actualAverage, testAverage, "Average failed");
+        int actualAverage = number.average(252);
+        assertSame(3, actualAverage, "Average failed");
     }
 
 }
